@@ -3,8 +3,12 @@ public class Basket {
     private  int totalPrice = 0;
     private int limit;
 
-    public Basket(int totalPriceLimit) {
-        limit = totalPriceLimit;
+    public Basket() {
+        this.limit = 100000;
+    }
+
+    public Basket(int limit) {
+        this.limit = limit;
     }
 
     public  void add(String name, int price) {

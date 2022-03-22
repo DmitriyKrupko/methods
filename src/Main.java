@@ -8,7 +8,12 @@ public class Main {
         mashaBasket.add("Лопата", 280);
         mashaBasket.add("Бочка", 2900);
 
+        Basket veronikaBasket = new Basket();
+        veronikaBasket.add("Фигурка", 5000);
+        veronikaBasket.add("Манга", 3500);
+
         vasyaBasket.print("Корзина Васи: ");
         mashaBasket.print("Корзина Маши: ");
+        veronikaBasket.print("Корзина Вероники: ");
     }
 }
