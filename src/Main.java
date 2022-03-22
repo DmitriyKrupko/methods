@@ -15,8 +15,17 @@ public class Main {
         Basket dimaBasket = new Basket("Стол", 5000);
 
         vasyaBasket.print("Корзина Васи: ");
+        System.out.println();
         mashaBasket.print("Корзина Маши: ");
+        System.out.println();
         veronikaBasket.print("Корзина Вероники: ");
+        System.out.println();
         dimaBasket.print("Корзина Димы: ");
+
+        System.out.println();
+        System.out.println("Сумма корзины Васи: " + vasyaBasket.getTotalPrice());
+        System.out.println("Сумма корзины Маши: " + mashaBasket.getTotalPrice());
+        System.out.println("Сумма корзины Вероники: " + veronikaBasket.getTotalPrice());
+        System.out.println("Сумма корзины Димы: " + dimaBasket.getTotalPrice());
     }
 }
