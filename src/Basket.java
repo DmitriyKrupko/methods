@@ -4,11 +4,19 @@ public class Basket {
     private int limit;
 
     public Basket() {
+        items = "Список товаров:";
         this.limit = 100000;
     }
 
     public Basket(int limit) {
+        this();
         this.limit = limit;
+    }
+
+    public Basket(String items, int totalPrice) {
+        this();
+        this.items = this.items + items;
+        this.totalPrice = totalPrice;
     }
 
     public  void add(String name, int price) {

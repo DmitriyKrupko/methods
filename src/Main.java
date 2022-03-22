@@ -12,8 +12,11 @@ public class Main {
         veronikaBasket.add("Фигурка", 5000);
         veronikaBasket.add("Манга", 3500);
 
+        Basket dimaBasket = new Basket("Стол", 5000);
+
         vasyaBasket.print("Корзина Васи: ");
         mashaBasket.print("Корзина Маши: ");
         veronikaBasket.print("Корзина Вероники: ");
+        dimaBasket.print("Корзина Димы: ");
     }
 }
