@@ -1,9 +1,17 @@
 public class Basket {
     private  String items = "";
     private  int totalPrice = 0;
+    private int limit;
+
+    public Basket(int totalPriceLimit) {
+        limit = totalPriceLimit;
+    }
 
     public  void add(String name, int price) {
         if(contains(name)){
+            return;
+        }
+        if(totalPrice + price >= limit) {
             return;
         }
         items = items + "\n" + name + "-" + price;
