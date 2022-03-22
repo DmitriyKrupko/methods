@@ -19,6 +19,9 @@ public class Basket {
     }
 
     public static void add(String name, int price) {
+        if(contains(name)){
+            return;
+        }
         items = items + "\n" + name + "-" + price;
         totalPrice = totalPrice + price;
     }
