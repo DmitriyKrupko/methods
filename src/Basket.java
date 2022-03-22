@@ -20,14 +20,23 @@ public class Basket {
     }
 
     public  void add(String name, int price) {
+        add(name, price, 1);
+    }
+
+    public void add(int count, String name) {
+        add(count, name);
+    }
+
+    public void add(String name, int price, int count) {
         if(contains(name)){
             return;
         }
-        if(totalPrice + price >= limit) {
+        if(totalPrice + count *price >= limit) {
             return;
         }
-        items = items + "\n" + name + "-" + price;
-        totalPrice = totalPrice + price;
+        items = items + "\n" + name + "-" +
+                count + "шт. - " + price;
+        totalPrice = totalPrice + count *price;
     }
 
     public  void clear () {
