@@ -9,8 +9,13 @@ public class Basket {
          add("Сок", 95);
          add("Мука", 106);
          print("Содержимое корзины:");
+         int totalPrice = getTotalPrice();
+         System.out.println("Общая стоймость товаров: " + totalPrice);
          clear();
+         System.out.println();
          print("Содержимое корзины:");
+         totalPrice = getTotalPrice();
+         System.out.println("Общая стоймость товаров: " + totalPrice);
     }
 
     public static void add(String name, int price) {
@@ -25,6 +30,10 @@ public class Basket {
 
     public static int getTotalPrice() {
         return totalPrice;
+    }
+
+    public static boolean contains (String name) {
+        return items.contains(name);
     }
 
     public static void print (String title) {
